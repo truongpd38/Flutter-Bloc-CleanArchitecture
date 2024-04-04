@@ -24,10 +24,10 @@ enum LanguageCode {
     localeCode: LocaleConstants.en,
     serverValue: ServerRequestResponseConstants.en,
   ),
-  // ja(
-  //   localeCode: LocaleConstants.ja,
-  //   serverValue: ServerRequestResponseConstants.ja,
-  // ),
+  ja(
+    localeCode: LocaleConstants.ja,
+    serverValue: ServerRequestResponseConstants.ja,
+  ),
   vi(
     localeCode: LocaleConstants.vi,
     serverValue: ServerRequestResponseConstants.vi,
