@@ -23,19 +23,21 @@ class AppColors {
   final LinearGradient primaryGradient;
 
   static const defaultAppColor = AppColors(
-    primaryColor: Color.fromARGB(255, 166, 168, 254),
+    primaryColor: Color.fromARGB(255, 82, 85, 255),
     secondaryColor: Color.fromARGB(255, 62, 62, 70),
     primaryTextColor: Color.fromARGB(255, 62, 62, 70),
-    secondaryTextColor: Color.fromARGB(255, 166, 168, 254),
-    primaryGradient: LinearGradient(colors: [Color(0xFFFFFFFF), Color(0xFFFE6C30)]),
+    secondaryTextColor: Color.fromARGB(255, 86, 87, 139),
+    primaryGradient:
+        LinearGradient(colors: [Color(0xFFFFFFFF), Color(0xFFFE6C30)]),
   );
 
   static const darkThemeColor = AppColors(
     primaryColor: Color.fromARGB(255, 62, 62, 70),
-    secondaryColor: Color.fromARGB(255, 166, 168, 254),
-    primaryTextColor: Color.fromARGB(255, 166, 168, 254),
+    secondaryColor: Color.fromARGB(255, 21, 22, 61),
+    primaryTextColor: Color.fromARGB(255, 111, 111, 131),
     secondaryTextColor: Color.fromARGB(255, 62, 62, 70),
-    primaryGradient: LinearGradient(colors: [Color(0xFFFFFFFF), Color(0xFFFE6C30)]),
+    primaryGradient:
+        LinearGradient(colors: [Color(0xFFFFFFFF), Color(0xFFFE6C30)]),
   );
 
   static AppColors of(BuildContext context) {

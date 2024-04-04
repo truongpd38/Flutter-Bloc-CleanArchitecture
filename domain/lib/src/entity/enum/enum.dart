@@ -24,9 +24,13 @@ enum LanguageCode {
     localeCode: LocaleConstants.en,
     serverValue: ServerRequestResponseConstants.en,
   ),
-  ja(
-    localeCode: LocaleConstants.ja,
-    serverValue: ServerRequestResponseConstants.ja,
+  // ja(
+  //   localeCode: LocaleConstants.ja,
+  //   serverValue: ServerRequestResponseConstants.ja,
+  // ),
+  vi(
+    localeCode: LocaleConstants.vi,
+    serverValue: ServerRequestResponseConstants.vi,
   );
 
   const LanguageCode({
@@ -36,7 +40,7 @@ enum LanguageCode {
   final String localeCode;
   final String serverValue;
 
-  static const defaultValue = ja;
+  static const defaultValue = vi;
 }
 
 enum NotificationType {
