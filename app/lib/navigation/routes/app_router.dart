@@ -5,7 +5,6 @@ import 'package:injectable/injectable.dart';
 
 import '../../app.dart';
 
-// ignore_for_file:prefer-single-widget-per-file
 @AutoRouterConfig(
   replaceInRouteName: 'Page,Route',
 )

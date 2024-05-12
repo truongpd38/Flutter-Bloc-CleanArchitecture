@@ -122,3 +122,6 @@ export PATH="$PATH:~/.gem/gems/lefthook-0.7.7/bin"
 ## License
 
 MIT
+
+## Upgrade
+    - [icon] 
