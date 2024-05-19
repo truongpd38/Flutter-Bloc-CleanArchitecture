@@ -1,13 +1,13 @@
 name: CI
 on:
   pull_request:
-    branches: [ develop ]
+    branches: [develop]
   workflow_dispatch:
 
 env:
   JAVA_VERSION: "12.x"
-  FLUTTER_VERSION: "3.13.1"
-  MELOS_VERSION: "3.1.0"
+  FLUTTER_VERSION: "3.16.3"
+  MELOS_VERSION: "3.1.1"
 
 jobs:
   UT_format_lint_notify:
@@ -28,9 +28,9 @@ jobs:
       - name: Add pub cache to PATH
         run: echo "PUB_CACHE="$HOME/.pub-cache"" >> $GITHUB_ENV
 
-      - name: Install melos  
+      - name: Install melos
         run: dart pub global activate melos ${{env.MELOS_VERSION}}
-      
+
       - name: Run pub get and gen files
         run: make sync
 
@@ -45,7 +45,7 @@ jobs:
 
       - name: Run analyze
         run: make analyze
-      
+
       - name: Run dart_code_metrics
         run: make dart_code_metrics
 

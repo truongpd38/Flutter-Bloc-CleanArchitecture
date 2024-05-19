@@ -24,6 +24,7 @@ dependencies:
   shared:
     path: ../shared
   tuple: 2.0.2
+  iconly: 1.0.1
 
 dev_dependencies:
   build_runner: 2.4.5

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:iconly/iconly.dart';
 import 'package:resources/resources.dart';
 import 'package:shared/shared.dart';
 
@@ -51,10 +52,11 @@ enum NotificationType {
   static const defaultValue = unknown;
 }
 
+//set bottom icon
 enum BottomTab {
-  home(icon: Icon(Icons.home), activeIcon: Icon(Icons.home)),
-  search(icon: Icon(Icons.search), activeIcon: Icon(Icons.search)),
-  myPage(icon: Icon(Icons.people), activeIcon: Icon(Icons.people));
+  home(icon: Icon(IconlyLight.home), activeIcon: Icon(IconlyBold.home)),
+  search(icon: Icon(IconlyLight.search), activeIcon: Icon(IconlyBold.search)),
+  myPage(icon: Icon(IconlyLight.profile), activeIcon: Icon(IconlyBold.profile));
 
   const BottomTab({
     required this.icon,

@@ -9,7 +9,7 @@ class UiConstants {
   /// material app
   static const materialAppTitle = 'My App';
 // ignore: avoid_hard_coded_colors
-  static const taskMenuMaterialAppColor = Color.fromARGB(255, 153, 154, 251);
+  static const taskMenuMaterialAppColor = Color.fromARGB(255, 0, 0, 0);
 
   /// orientation
   static const mobileOrientation = [
@@ -28,7 +28,7 @@ class UiConstants {
   static const systemUiOverlay = SystemUiOverlayStyle(
     statusBarBrightness: Brightness.light,
 // ignore: avoid_hard_coded_colors
-    statusBarColor: Color.fromARGB(255, 153, 154, 251),
+    statusBarColor: Color.fromARGB(255, 90, 40, 99),
   );
 
   static const textFieldTextStyleHeight = 1.3;

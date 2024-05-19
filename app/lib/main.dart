@@ -23,12 +23,19 @@ void _reportError(Object error, StackTrace stackTrace) {
   Log.e(error, stackTrace: stackTrace, name: 'Uncaught exception');
 
   // report by Firebase Crashlytics here
+  // FlutterError.onError = FirebaseCrashlytics.instance.recordFlutterFatalError;
+
+  // PlatformDispatcher.instance.onError = (error, stack) {
+  //   FirebaseCrashlytics.instance.recordError(error, stack, fatal: true);
+  //   return true;
+  // };
 }
 
 Future<LoadInitialResourceOutput> _loadInitialResource() async {
   final result = runCatching(
-    action: () =>
-        GetIt.instance.get<LoadInitialResourceUseCase>().execute(const LoadInitialResourceInput()),
+    action: () => GetIt.instance
+        .get<LoadInitialResourceUseCase>()
+        .execute(const LoadInitialResourceInput()),
   );
 
   return result.when(

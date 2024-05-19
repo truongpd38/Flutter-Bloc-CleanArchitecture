@@ -1,4 +1,4 @@
-image: cirrusci/flutter:3.13.1
+image: cirrusci/flutter:3.16.3
 
 definitions:
   steps:
@@ -8,7 +8,7 @@ definitions:
           - make check_commit_message
           - flutter doctor -v
           - echo "Install melos"
-          - dart pub global activate melos 3.1.0
+          - dart pub global activate melos 3.1.1
           - export PATH="$PATH":"$HOME/.pub-cache/bin"
           - echo "Run build_runner"
           - make sync
@@ -37,11 +37,11 @@ definitions:
 
 pipelines:
   pull-requests:
-    'feature/NFT-*':
+    "feature/NFT-*":
       - step: *running-ci
-    'bugfix/NFT-*':
+    "bugfix/NFT-*":
       - step: *running-ci
-    'hotfix/NFT-*':
+    "hotfix/NFT-*":
       - step: *running-ci
-    'release/NFT-*':
+    "release/NFT-*":
       - step: *running-ci

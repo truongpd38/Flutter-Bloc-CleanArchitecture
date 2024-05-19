@@ -6,8 +6,8 @@ on:
 
 env:
   JAVA_VERSION: "12.x"
-  FLUTTER_VERSION: "3.13.1"
-  MELOS_VERSION: "3.1.0"
+  FLUTTER_VERSION: "3.16.3"
+  MELOS_VERSION: "3.1.1"
   TESTER_GROUPS: "testers"
 
   # Android
@@ -191,4 +191,3 @@ jobs:
           groups: ${{env.TESTER_GROUPS}}
           file: ${{env.APK_FILE_NAME}}
           releaseNotes: "${{ github.event.head_commit.author.name }}: ${{ github.event.head_commit.message }}"
-
