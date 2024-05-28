@@ -52,10 +52,11 @@ enum NotificationType {
   static const defaultValue = unknown;
 }
 
-//set bottom icon
+//set bottom icon - DashBoard
 enum BottomTab {
   home(icon: Icon(IconlyLight.home), activeIcon: Icon(IconlyBold.home)),
   search(icon: Icon(IconlyLight.search), activeIcon: Icon(IconlyBold.search)),
+  chat(icon: Icon(IconlyLight.chat), activeIcon: Icon(IconlyBold.chat)),
   myPage(icon: Icon(IconlyLight.profile), activeIcon: Icon(IconlyBold.profile));
 
   const BottomTab({
@@ -71,6 +72,8 @@ enum BottomTab {
         return S.current.home;
       case BottomTab.search:
         return S.current.search;
+      case BottomTab.chat:
+        return S.current.cancel;
       case BottomTab.myPage:
         return S.current.myPage;
     }
