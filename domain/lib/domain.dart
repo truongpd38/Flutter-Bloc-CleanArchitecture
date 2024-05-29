@@ -7,6 +7,7 @@ export 'src/entity/app_notification.dart';
 export 'src/entity/base/paged_list.dart';
 export 'src/entity/base/process_state.dart';
 export 'src/entity/enum/enum.dart';
+export 'src/entity/flights.dart';
 export 'src/entity/image_url.dart';
 export 'src/entity/token.dart';
 export 'src/entity/user.dart';

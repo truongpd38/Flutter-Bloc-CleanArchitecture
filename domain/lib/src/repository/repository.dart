@@ -70,4 +70,10 @@ abstract class Repository {
   bool deleteImageUrl(int id);
 
   int deleteAllUsersAndImageUrls();
+
+  // Stream<List<Flights>> getFlightsStream();
+  // Future<PagedList<Flights>> getFlights({
+  //   required int page,
+  //   required int? limit,
+  // });
 }

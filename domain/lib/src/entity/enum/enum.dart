@@ -25,10 +25,6 @@ enum LanguageCode {
     localeCode: LocaleConstants.en,
     serverValue: ServerRequestResponseConstants.en,
   ),
-  ja(
-    localeCode: LocaleConstants.ja,
-    serverValue: ServerRequestResponseConstants.ja,
-  ),
   vi(
     localeCode: LocaleConstants.vi,
     serverValue: ServerRequestResponseConstants.vi,
@@ -73,7 +69,7 @@ enum BottomTab {
       case BottomTab.search:
         return S.current.search;
       case BottomTab.chat:
-        return S.current.cancel;
+        return S.current.ok;
       case BottomTab.myPage:
         return S.current.myPage;
     }
